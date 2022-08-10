@@ -6,8 +6,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/jredl-va/go-zendesk/zendesk"
 	"github.com/stretchr/testify/require"
+	"github.com/taylorwiebe/go-zendesk/zendesk"
 )
 
 func TestClientHeaders(t *testing.T) {

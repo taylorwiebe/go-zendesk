@@ -1,4 +1,4 @@
-module github.com/jredl-va/go-zendesk
+module github.com/taylorwiebe/go-zendesk
 
 go 1.18
 
