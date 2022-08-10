@@ -9,7 +9,7 @@ import (
 //
 // Zendesk Help Center API docs: https://developer.zendesk.com/api-reference/help_center/help-center-api/articles/#json-format
 type Article struct {
-	ID                *int64
+	ID                *int64     `json:"id,omitempty"`
 	AuthorID          *int64     `json:"author_id,omitempty"`
 	Body              *string    `json:"body,omitempty"`
 	CommentsDisabled  *bool      `json:"comments_disabled,omitempty"`
