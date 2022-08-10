@@ -1410,15 +1410,15 @@ func (_m *MockClient) UploadFile(_a0 string, _a1 *string, _a2 io.Reader) (*Uploa
 }
 
 // WithHeader provides a mock function with given fields: name, value
-func (_m *MockClient) WithHeader(name string, value string) MockClient {
+func (_m *MockClient) WithHeader(name string, value string) Client {
 	ret := _m.Called(name, value)
 
-	var r0 MockClient
-	if rf, ok := ret.Get(0).(func(string, string) MockClient); ok {
+	var r0 Client
+	if rf, ok := ret.Get(0).(func(string, string) Client); ok {
 		r0 = rf(name, value)
 	} else {
 		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(MockClient)
+			r0 = ret.Get(0).(Client)
 		}
 	}
 
