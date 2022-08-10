@@ -1430,8 +1430,8 @@ type mockConstructorTestingTNewClient interface {
 	Cleanup(func())
 }
 
-// NewClient creates a new instance of MockClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
-func NewClient(t mockConstructorTestingTNewClient) *MockClient {
+// NewMockClient creates a new instance of MockClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
+func NewMockClient(t mockConstructorTestingTNewClient) *MockClient {
 	mock := &MockClient{}
 	mock.Mock.Test(t)
 
